@@ -32,7 +32,7 @@ class PracticeController extends Controller
             return redirect()->route('dashboard')->with('name', $name);
         }
 
-        return redirect()->route('login')->with('error', 'Invalid credentials. Please try again.');
+        return redirect()->route('login')->with('error', 'Invalid credentials. Please try signing up.');
     }
 
 
