@@ -50,6 +50,10 @@
     <br>
     <span style="color: red">@error('password'){{ $message }}@enderror</span>
     <br>
+    
+    @if(session('error'))
+    <p class="error-message">{{ session('error') }}</p>
+    @endif
     <button type="submit">Sign In</button>
     </form>
 <a href="{{ url('/register') }}">Don't have an account? Sign Up</a>
